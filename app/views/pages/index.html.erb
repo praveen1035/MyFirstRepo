@@ -1,0 +1,25 @@
+	<table border="0" height="auto" width="850px" align="center">
+		<tr height="85px" class="head">
+			<td>
+				<div  class="hetit">
+					SkyCabs.com  
+ 				</div>
+			</td>		
+		</tr>
+		<tr height="500px" class="body">
+			<td>
+				<div class="foov">
+					<%= form_for :users do |f| %>
+						<%= f.text_field :logml, :class => "foiv", :placeholder =>"Email" %>
+						<%= f.password_field :logpd, :class => "foiv", :placeholder =>"Password" %>
+						<%= f.submit :LOGIN, :class => "fosv" %>					
+					<% end %>
+					
+					<div class="silink">Dont have an account wanna &nbsp <a style="color:#005df5" href="signup"><b>SIGN UP</b></a></div>
+				</div>			
+			</td>		
+		</tr>
+		<tr height="25px" class="foot">
+			<td></td>		
+		</tr>
+	</table>

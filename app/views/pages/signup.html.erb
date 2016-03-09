@@ -1,0 +1,26 @@
+	<table border="0" height="auto" width="850px" align="center">
+		<tr height="85px" class="head">
+			<td>
+				<div  class="hetit">
+					SkyCabs.com
+				</div>
+			</td>		
+		</tr>
+		<tr height="500px" class="body">
+			<td>
+				<div class="foov">	
+				<%= form_for :newusers do |f| %>
+					<%= f.text_field :sinm, :class => "foiv", :placeholder =>"Username" %>
+					<%= f.text_field :sigml, :class => "foiv", :placeholder =>"Email" %>
+					<%= f.password_field :sipd, :class => "foiv", :placeholder =>"Password" %>
+					<%= f.password_field :sicpd, :class => "foiv", :placeholder =>"Confirm Password" %>			
+					<%= f.submit :SIGNUP, :class => "fosv" %>					
+						
+				<% end %>
+				</div>		
+			</td>		
+		</tr>
+		<tr height="25px" class="foot">
+			<td></td>		
+		</tr>
+	</table>
